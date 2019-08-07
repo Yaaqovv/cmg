@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hamburger</title>
+    <style>
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            margin-top: 10rem;
+        }
+
+        #drink {
+            border-top: 250px solid black;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            width: 100px;
+            margin-right: 70px;
+        }
+
+        #drink:before {
+            content: "";
+            position: absolute;
+            top: 170px;
+            width: 100px;
+            height: 50px;
+            background-color: white;
+        }
+
+        #drink:after {
+            content: "";
+            position: absolute;
+            width: 70px;
+            top: 100px;
+            transform: skewX(-20deg);
+            margin-left: 4rem;
+            height: 140px;
+            border-top: 8px solid black;
+            border-left: 10px solid black;
+            border-top-left-radius: 8%;
+        }
+
+        #hamburger {
+            position: relative;
+            top: 45px;
+        }
+
+        #bun-top {
+            background-color: black;
+            width: 200px;
+            height: 60px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        #hamburger-middle {
+            position: relative;
+            right: 5px;
+        }
+
+        #hamburger-middle span {
+            background-color:black;
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            margin: 3px -10px 3px 0;
+        }
+
+        #bun-bottom {
+            background-color: black;
+            width: 200px;
+            height: 60px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        #plate {
+            margin: 0 auto;
+            background-color: black;
+            width: 400px;
+            height: 20px;
+            margin-top: 1rem;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="drink">
+
+        </div>
+        <div id="hamburger">
+            <div id="bun-top">
+
+            </div>
+            <div id="hamburger-middle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="bun-bottom">
+
+            </div>
+        </div>
+    </div>
+    <div id="plate">
+
+    </div>
+    
+
+</body>
+</html>

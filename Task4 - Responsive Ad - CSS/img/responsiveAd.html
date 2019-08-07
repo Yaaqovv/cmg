@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Ad</title>
+    <style>
+
+        @media screen and (min-width: 1721px) {
+
+            body div {
+
+                display: flex;
+                background-color: #2e2eb8;
+
+            }
+
+            #familiar {
+
+                color: white;
+                display: block;
+                background-color: red;
+                width: 300px;
+                text-align: center;
+                padding-top: 4.5rem;
+                margin-right: 2rem;
+
+            }
+
+            #join-our-team {
+
+                color: white;
+                display: block;
+                width: 300px;
+                text-align: center;
+                padding-top: 1rem;
+                padding-left: 4rem;
+
+            }
+
+            #join-our-team h3 {
+                width: 150px;
+                font-size: 30px;
+            }
+
+            img {
+                margin: 1rem auto;
+            }
+
+            #cmg {
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+                margin-left: 10rem;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        @keyframes headingAnimationFirst {
+            0% { width: 300px; }
+            100% { width: 400px; }
+        }
+
+        @keyframes widthAnimationSecond {
+            0% { width: 400px; }
+            100% { width: 300px; }
+        }
+
+    
+
+        @media screen and (max-width: 1720px) {
+
+            #logos {
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 400px;
+            }
+
+            #familiar {
+
+                color: white;
+                background-color: red;
+                width: 400px;
+                height: 66px;
+                text-align: center;
+                animation: headingAnimationFirst 1s;
+
+            }
+
+            #familiar h1 {
+                margin: unset;
+                padding-top: 0.8rem;
+            }
+
+            #join-our-team {
+                
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 1rem;
+                width: 400px;
+                height: 50px;
+                background-color: blue;
+                animation: headingAnimationFirst 1s;
+
+            }
+
+            #join-our-team h3 {
+                margin: unset;
+                font-size: 30px;
+                width: unset;
+            }
+
+            #cmg {
+                height: 50px;
+            }
+
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            #familiar {
+                display: none;
+            }
+
+            #logos {
+                width: 300px;
+                animation: widthAnimationSecond 1s;
+            }
+
+            #logos img {
+                width: 150px;
+                height: 150px;
+            }
+
+            #join-our-team {
+                justify-content: space-evenly;
+                width: 300px;
+                height: 40px;
+                animation: widthAnimationSecond 1s;
+            }
+
+            #join-our-team h3 {
+                font-size: 20px;
+                width: unset;
+            }
+
+            #cmg {
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+                height: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            #familiar {
+                display: block;
+                width: 200px;
+                padding-top: 1.3rem;
+                animation: none;
+            }
+
+            #familiar h1 {
+                padding: unset;
+            }
+
+            #logos {
+                grid-template-columns: auto ;
+                width: 200px;
+                background-color: blue;
+            }
+
+            #logos img {
+                margin: 0 auto;
+            }
+
+            #logos img:first-child {
+                margin: 1rem auto 0;
+            }
+
+            #join-our-team {
+                flex-direction: column;
+                width: 200px;
+                height: 100px;
+            }
+
+            #join-our-team h3 {
+                text-align: center;
+                width: unset;
+            }
+
+            #join-our-team img {
+                margin-left: 8rem;
+            }
+
+        }
+
+        body img {
+            height: 200px;
+        }
+
+        #css3 {
+            background-color: #e600e6;
+        }
+
+        #html{
+            background-color: #2eb82e;
+        }
+
+        #node {
+            background-color: white;
+        }
+
+        #mongo {
+            background-color: #1ea81e;
+        }
+
+        #react {
+            background-color: rgb(77, 77, 77);
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div id="familiar"><h1>FAMILIAR?</h1></div>
+    <div id="logos">
+        <img id="css3" width="200" alt="CSS3 logo and wordmark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/256px-CSS3_logo_and_wordmark.svg.png">
+        <img id="html" width="200" alt="HTML5 logo and wordmark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png">
+        <img id="react" width="200" alt="React-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png">
+        <img id="mongo" width="200" src="https://cdn.worldvectorlogo.com/logos/mongodb.svg">
+        <img id="js" width="200" alt="JavaScript-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/512px-JavaScript-logo.png">
+        <img id="node" width="200" alt="Node.js logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/512px-Node.js_logo.svg.png">
+    </div>
+    <div id="join-our-team"><h3>JOIN OUR TEAM</h3><img id="cmg" width="50" alt="Cmg logo" src="https://www.convergent-usa.com/_nuxt/img/logo.d5d3c6a.png"></div>
+    
+</div>
+</body>
+</html>

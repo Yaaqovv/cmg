@@ -1,0 +1,5 @@
+#range-inputs,
+#number-inputs {
+    display: flex;
+    justify-content: space-evenly;
+}
